@@ -13,3 +13,23 @@ Your program should ask the user for
 * The program will calculate the amount of interest earned and display it.
 * Appropriate formatting of the output is a requirement for this assignment
 """
+def main():
+  P = input("How many dollas do you have: ")
+  R = input("what percentage will you multiplication: ")
+  while True:
+    Time = input("Months, Days, Years (M/D/Y): ")
+    if Time == 'M':
+      Time = 12
+      break
+    elif Time == 'D':
+      Time = 365
+      break
+    elif Time == 'Y':
+      Time = 1
+      break
+
+
+
+
+if __name__ == "__main__":
+  ...
