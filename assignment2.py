@@ -23,3 +23,23 @@ final balance: 1320.68
 
 """
 
+
+def main():
+    while True:
+        try:
+            In = float(input("what is your annual investment: "))
+            R = float(input("What about the rate????: "))
+            T = int(input("Time???????????????????????: "))
+            Money = 0
+            for year in range(1, T+1):
+                Money += In
+                i = Money * (R/100)
+                Money += i
+                print(f"Year {year}: Nuevo Balanca: {Money: .2f}")
+                break
+
+        except Exception as e:
+            print("nuh uh")
+
+
+main()
